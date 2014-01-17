@@ -1,0 +1,22 @@
+Note sur les chaine de caractère
+
+Pour ecrire "Salut"
+Il faut un tableau de 6 char
+	char chaine[6]="Salut";
+
+	chaine->|	'S'	|
+			|_______|
+			|	'a'	|
+			|_______|
+			|	'l'	|
+			|_______|
+			|	'u'	|
+			|_______|
+			|	't'	|
+			|_______|
+			|  '\0'	|
+			|_______|
+
+Scanf ne permet de pas de récuper les chaines avec un espace dedans, il faut utiliser la fonction 
+	gets(Chaine)
+	puts(Chaine)
