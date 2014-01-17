@@ -1,0 +1,9 @@
+
+== Pointers ==
+int a = 2;
+int *pa = &pa //je crée le pointeur pa de type int qui pointe l'adresse de pa
+	pa = adresse
+	*pa = valeur contenu à l'adresse
+
+== Tableaux ==
+int tab[10] tableau tab de 10 valent de type entier

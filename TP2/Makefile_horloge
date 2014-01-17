@@ -1,0 +1,20 @@
+MAINSRC=theme3_exe5.c
+LIBSRC=horloge.c
+
+EXEC= $(patsubst %.c,%,$(MAINSRC))
+MAINOBJ= $(MAINSRC:.c=.o)
+LIBH=$(LIBSRC:.c=.h)
+LIBOBJ=$(LIBSRC:.c=.o)
+
+.PHONY: clean
+
+all: $(EXEC)
+
+%.o : %.c $(LIBH)
+	gcc -c -o $@ -DDEBUG $<
+
+$(EXEC) : $(MAINOBJ) $(LIBOBJ)
+	gcc -o $@ $^
+
+clean:
+	rm -f *.o $(EXEC)

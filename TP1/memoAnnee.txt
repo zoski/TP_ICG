@@ -1,0 +1,32 @@
+/* Retourne le nombre de jour dans le mois n° */
+int njour(int nm){
+	int nbj ;
+	if(nm == 1) return 31 ;
+	if(nm == 2) return 28 ;
+	if(nm == 3) return 31 ;
+	if(nm == 4) return 30 ;
+	if(nm == 5) return 31 ;
+	if(nm == 6) return 30 ;
+	if(nm == 7) return 31 ;
+	if(nm == 8) return 31 ;
+	if(nm == 9) return 30 ;
+	if(nm == 10) return 31 ;
+	if(nm == 11) return 30 ;
+	if(nm == 12) return 31 ;
+}
+
+/* Calcule le nombre de jours de décalage pour le mois concerné */
+int caldecal(int nm) {
+	if(nm == 1) return 2 ;
+	if(nm == 2) return 5 ;
+	if(nm == 3) return 5 ;
+	if(nm == 4) return 1 ;
+	if(nm == 5) return 3 ;
+	if(nm == 6) return 6 ;
+	if(nm == 7) return 1 ;
+	if(nm == 8) return 4 ;
+	if(nm == 9) return 0 ;
+	if(nm == 10) return 2 ;
+	if(nm == 11) return 5 ;
+	if(nm == 12) return 0 ;
+}
